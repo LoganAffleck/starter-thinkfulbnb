@@ -99,12 +99,12 @@ header {
 /* ------- Hero Section ------- */
 
 #spacer {
-  height: 130px;
+  height: 150px;
   background-color: black;
 }
 
 #stay {
-  background-image: url(../images/headimg.jpeg);
+  background-image: url(images/headimg.jpg);
   background-size: cover;
   opacity: 1;
   
