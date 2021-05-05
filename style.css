@@ -23,6 +23,7 @@ h3 {
 
 p {
   line-height: 1.5em;
+  font-size: .75em;
   margin: 0;
 }
 
@@ -211,7 +212,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
 
   form, header, .logo { 
     flex-direction: row;
@@ -248,11 +249,12 @@ footer p {
 
   form{
     width: 100%;
-    font-size: .3em;
+    font-size: 10px;
     margin-bottom: 25px;
     justify-content: center;
     background-color: rgba(255, 56, 92, 0);
     backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
   }
 
   label, input {
@@ -276,5 +278,32 @@ footer p {
   #form-element{
     margin-right: 15px;
     align-items: center;
+  }
+
+  .desktop-container{
+    display: flex;
+    margin-bottom: 20px;
+
+  }
+
+  .desktop-container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .img-w-header{
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3{
+    display: inline;
+    width: 30%
+  }
+
+  main img{
+    width: 30%;
+    margin-right: 10px;
   }
 }
