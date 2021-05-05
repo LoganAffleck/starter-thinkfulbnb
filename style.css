@@ -8,6 +8,8 @@ body {
   transition: .3s ease-in-out;
 }
 
+
+
 h2 {
   font-size: 50px;
   font-weight: 800;
@@ -63,11 +65,12 @@ header {
   width: 100%;
   background-color: rgba(0,0,0,50%);
   z-index: 100;
-  padding: 20px 20px 0px 0px;
+  padding: 20px 0px 20px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
 
 
@@ -106,6 +109,7 @@ header {
 #stay {
   background-image: url(images/headimg.jpg);
   background-size: cover;
+  background-position: center;
   opacity: 1;
   
   
@@ -128,9 +132,11 @@ form {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin-bottom: 25px;
   font-size: 15px;
   background-color: rgba(255, 56, 92, .4);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
   border-radius: 10px;
   width: 90%;
@@ -142,7 +148,7 @@ form {
   margin-right: 10px;
 }
 
-form label {
+label {
   margin-bottom: 15px;
   font-weight: 800;
   display: flex;
@@ -150,8 +156,12 @@ form label {
   
 }
 
-form select,
-form input {
+#form-element { 
+  display: flex;
+  flex-direction: column;
+}
+
+select, input {
   margin-bottom: 20px;
   padding: 10px;
   padding-left: 20px;
@@ -168,7 +178,7 @@ form input {
   color: #fff;
   font-size: 20px;
   padding: 15px;
-  width: 100%;
+  width: 50%;
 
   border-color: black;
   border-radius: 100px;
@@ -200,3 +210,71 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media screen and (min-width: 600px) {
+
+  form, header, .logo { 
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo{
+    justify-content: center;
+  }
+
+  #logoimg{
+    margin: 0;
+    margin-right: 10px;
+  }
+
+
+
+  header {
+    justify-content: space-between;
+    height: 40px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  #menu {
+    margin: 0;
+    width: 50%;
+  }
+
+  #spacer {
+    height: 80px;
+
+  }
+
+  form{
+    width: 100%;
+    font-size: .3em;
+    margin-bottom: 25px;
+    justify-content: center;
+    background-color: rgba(255, 56, 92, 0);
+    backdrop-filter: blur(0px);
+  }
+
+  label, input {
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+
+  input, select{
+    padding: 10px;
+    margin: 0;
+  }
+
+  button {
+    width: 140px;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #form-element{
+    margin-right: 15px;
+    align-items: center;
+  }
+}

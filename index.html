@@ -42,37 +42,46 @@
         <h2>Find your perfect <br> vacation rental.</h2>
         <!-- Create a form here -->
         <form>
-          <label for='location'>
+
+          <div id='form-element'>
+            <label for='location'>
             <span class="material-icons">room</span>
             Location:</label>
-          <input type="text" name='location' placeholder='Search Destination'/>
+            <input type="text" name='location' placeholder='Search Destination'/>
+        </div>
 
-          <label for="start">
+        <div id='form-element'>
+            <label for="start">
             <span class="material-icons">flight_takeoff</span>
             Arrive:</label>
-          <input type="date" id="start" name="start"
-          value="today" min="today" max="2028-12-31">
+            <input type="date" id="start" name="start"
+            value="today" min="today" max="2028-12-31">
+        </div>
 
-          <label for="end">
+        <div id='form-element'>
+            <label for="end">
             <span class="material-icons">flight_land</span>
             Depart:</label>
-          <input type="date" id="start" name="end"
+            <input type="date" id="start" name="end"
             value="today" min="today" max="2028-12-31">
+        </div>
 
+        <div id='form-element'>
           <label for="type">
             <span class="material-icons">maps_home_work</span>
             Type:</label>
-          <select name="types" size="1">
+            <select name="types" size="1">
             <option value="Forest-Retreat">Forest Retreat</option>
             <option value="Beachfront">Beachfront</option>
             <option value="Cabin">Cabins</option>
             <option value="Pet-friendly">Pet-friendly</option>
           </select>
-          
-          <button for='submit'>
-            <span class="material-icons">travel_explore</span>
-            Search</button>
+        </div>
         </form>
+
+        <button for='submit'>
+          <span class="material-icons">travel_explore</span>
+          Search</button>
       </section>
 
       <!-- About -->
