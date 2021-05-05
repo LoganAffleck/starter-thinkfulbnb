@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Vacation Rentals & Unique Homes</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
@@ -19,22 +21,58 @@
 
   <body>
     <header>
-      <div class="logo">Thinkfulbnb</div>
-      <nav>
-        <ul id="menu">
-          <li><a>Stay</a></li>
-          <li><a>About</a></li>
-          <li><a>Ideas</a></li>
-          <li><a>Host</a></li>
-        </ul>
+      <div class="logo">
+        <img src="images/logo.svg" id='logoimg'>
+        Thinkfulbnb
+      </div>
+      <nav id ='menu'>
+        
+          <a>Stay</a>
+          <a>About</a>
+          <a>Ideas</a>
+          <a>Host</a>
+      
       </nav>
     </header>
 
     <main>
+      <div id='spacer'></div>
       <!-- Stay -->
       <section id="stay">
-        <h2>Find the perfect vacation rental</h2>
+        <h2>Find your perfect <br> vacation rental.</h2>
         <!-- Create a form here -->
+        <form>
+          <label for='location'>
+            <span class="material-icons">room</span>
+            Location:</label>
+          <input type="text" name='location' placeholder='Search Destination'/>
+
+          <label for="start">
+            <span class="material-icons">flight_takeoff</span>
+            Arrive:</label>
+          <input type="date" id="start" name="start"
+          value="today" min="today" max="2028-12-31">
+
+          <label for="end">
+            <span class="material-icons">flight_land</span>
+            Depart:</label>
+          <input type="date" id="start" name="end"
+            value="today" min="today" max="2028-12-31">
+
+          <label for="type">
+            <span class="material-icons">maps_home_work</span>
+            Type:</label>
+          <select name="types" size="1">
+            <option value="Forest-Retreat">Forest Retreat</option>
+            <option value="Beachfront">Beachfront</option>
+            <option value="Cabin">Cabins</option>
+            <option value="Pet-friendly">Pet-friendly</option>
+          </select>
+          
+          <button for='submit'>
+            <span class="material-icons">travel_explore</span>
+            Search</button>
+        </form>
       </section>
 
       <!-- About -->
@@ -104,7 +142,7 @@
     </main>
 
     <footer>
-      <p>© Thinkful</p>
+      <p>© Thinkful 2021</p>
     </footer>
   </body>
 </html>
