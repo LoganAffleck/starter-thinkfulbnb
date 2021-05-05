@@ -8,7 +8,14 @@ body {
   transition: .3s ease-in-out;
 }
 
+a {
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
 
+a:hover {
+  color:rgba(255, 56, 92)
+}
 
 h2 {
   font-size: 50px;
@@ -23,7 +30,7 @@ h3 {
 
 p {
   line-height: 1.5em;
-  font-size: .75em;
+  font-size: 3vw;
   margin: 0;
 }
 
@@ -171,6 +178,11 @@ select, input {
   border-color: black;
   border-width: 3px;
   cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+select:hover, input:hover {
+  color: #ff5275;
 }
 
 
@@ -213,6 +225,12 @@ footer p {
 /* -------  Media Query ------- */
 
 @media screen and (min-width: 700px) {
+
+  p, ul{
+    margin-left: 10px;
+    font-size: 1.25vw;
+    line-height: 2em
+  }
 
   form, header, .logo { 
     flex-direction: row;
@@ -290,20 +308,32 @@ footer p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .img-w-header{
     display: flex;
     flex-direction: column;
-  }
-
-  h3{
-    display: inline;
-    width: 30%
+    align-items: center;
+    width: 45%;
   }
 
   main img{
     width: 30%;
     margin-right: 10px;
+  }
+
+  .idea{
+    width: 100%
+  }
+
+  #host{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .halfscreen{
+    width: 45%
   }
 }
